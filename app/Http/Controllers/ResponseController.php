@@ -1,9 +1,8 @@
 <?php
-
-
 namespace App\Http\Controllers;
 
 use App\Models\Question;
+use App\Models\Response;
 use Illuminate\Http\Request;
 
 class ResponseController extends Controller
@@ -17,8 +16,14 @@ class ResponseController extends Controller
 
     public function submitResponse(Request $request, $id)
     {
+        // Save the response in the responses table
+        Response::create([
+            'question_id' => $id,
+            'response' => $request->input('response')
+        ]);
+
+        // Update the question's status to 'answered'
         $question = Question::findOrFail($id);
-        $question->response = $request->input('response');
         $question->status = 'answered';
         $question->save();
 
@@ -26,3 +31,4 @@ class ResponseController extends Controller
             ->with('success', 'Response submitted successfully.');
     }
 }
+
