@@ -10,8 +10,7 @@
 
 <body>
     <header>
-        <h1>Title</h1>
-        <!--add in navbar here if need it later on-->
+        <!--add in header or navbar here if need it later on-->
     </header>
 
     <main>

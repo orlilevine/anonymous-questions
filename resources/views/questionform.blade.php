@@ -35,7 +35,85 @@
             @endif
 
         </form>
-
     </div>
 @endsection
 
+<style>
+    body {
+        background-color: #f5f5f5; /* Light grey background */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        color: #333;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #0096c7; /* Matching button color */
+        box-shadow: 0 0 5px rgba(0, 150, 199, 0.5);
+        outline: none;
+    }
+
+    .btn-submit {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        color: #fff;
+        background-color: #0096c7;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .btn-submit:hover {
+        background-color: #0077b6;
+        transform: scale(1.05);
+    }
+
+    .alert-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        max-width: 600px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
