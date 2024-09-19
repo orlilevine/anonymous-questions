@@ -4,6 +4,8 @@
 
 @section('content')
     <div class="container">
+        <a href="{{ url('/') }}" class="btn-back">Back</a> <!-- Back button -->
+
         <h2>Submit Your Anonymous Question</h2>
 
         <!-- Form Start -->
@@ -18,7 +20,7 @@
             <!-- Question Input -->
             <div class="form-group">
                 <label for="question">Your Question</label>
-                <textarea id="question" name="question" class="form-control" rows="5" required placeholder="Enter your anonymous question"></textarea>
+                <textarea id="question" name="question" class="form-control" rows="10" required placeholder="Enter your anonymous question"></textarea>
             </div>
 
             <!-- Submit Button -->
@@ -33,7 +35,6 @@
                     </ul>
                 </div>
             @endif
-
         </form>
     </div>
 @endsection
@@ -48,6 +49,24 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        position: relative;
+    }
+
+    .btn-back {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.3rem;
+        color: #0096c7;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .btn-back:hover {
+        color: #0077b6;
     }
 
     h2 {
@@ -71,7 +90,7 @@
 
     .form-control {
         width: 100%;
-        padding: 10px;
+        padding: 15px; /* Increased padding for better usability */
         font-size: 1rem;
         color: #333;
         border: 1px solid #ddd;
