@@ -37,10 +37,11 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        width: 100%; /* Make the container take up the full width */
     }
 
     .question {
-        max-width: 700px;
+        max-width: 100%; /* Take up the full width of the container */
         margin-bottom: 20px;
         padding: 15px;
         border: 1px solid #ddd;
@@ -49,8 +50,7 @@
     }
 
     .form-group {
-        width: 100%;
-        max-width: 600px;
+        width: 100%; /* Take up full width */
         margin-bottom: 20px;
     }
 
@@ -62,7 +62,8 @@
     }
 
     .form-control {
-        width: 100%;
+        width: 70vw; /* Make the textbox take up 70% of the viewport width */
+        max-width: 1000px; /* But limit it to 1000px max width */
         padding: 15px;
         font-size: 1rem;
         color: #333;
@@ -104,7 +105,8 @@
         padding: 15px;
         border-radius: 5px;
         margin-top: 20px;
-        max-width: 600px;
+        width: 50vw;
+        max-width: 1000px; /* Limit max width */
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }

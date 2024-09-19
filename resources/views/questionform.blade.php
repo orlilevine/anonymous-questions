@@ -73,11 +73,12 @@
         font-size: 2.5rem;
         color: #333;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .form-group {
-        width: 100%;
-        max-width: 600px;
+        width: 70vw; /* Set the width to 70% of the viewport */
+        max-width: 1000px; /* Limit the maximum width to 1000px */
         margin-bottom: 20px;
     }
 
@@ -89,8 +90,8 @@
     }
 
     .form-control {
-        width: 100%;
-        padding: 15px; /* Increased padding for better usability */
+        width: 100%; /* Take up the full width of the form group */
+        padding: 15px;
         font-size: 1rem;
         color: #333;
         border: 1px solid #ddd;
@@ -117,6 +118,7 @@
         transition: background-color 0.3s, transform 0.3s;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         cursor: pointer;
+        margin-top: 20px;
     }
 
     .btn-submit:hover {
@@ -131,7 +133,8 @@
         padding: 15px;
         border-radius: 5px;
         margin-top: 20px;
-        max-width: 600px;
+        width: 70vw;
+        max-width: 1000px;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
