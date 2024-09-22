@@ -19,3 +19,5 @@ Route::post('/submit-question', [QuestionController::class, 'submitQuestion']);
 Route::get('/response/{id}', [ResponseController::class, 'showQuestion'])->name('showQuestion');
 Route::post('/response/{id}', [ResponseController::class, 'submitResponse'])->name('submitResponse');
 
+Route::get('pending-questions', [ResponseController::class, 'pendingQuestions']);
+
