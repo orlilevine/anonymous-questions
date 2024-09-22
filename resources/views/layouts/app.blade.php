@@ -9,18 +9,35 @@
 </head>
 
 <body>
-    <header>
-        <!--add in header or navbar here if need it later on-->
-    </header>
+<header>
+    <div class="logo-container">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo">
+    </div>
+</header>
 
-    <main>
-        @yield('content')  <!--extend content on each page to add page specific content -->
-    </main>
+<main>
+    @yield('content')  <!--extend content on each page to add page-specific content -->
+</main>
 
-`   <footer>
-        <!--add in footer later on possibly-->
-    </footer>
+<footer>
+    <!--add in footer later on possibly-->
+</footer>
 
 </body>
 </html>
 
+<style>
+    .logo-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    main {
+        margin-top: -35px; /* Optional: Adjust margin to bring content even closer */
+    }
+</style>

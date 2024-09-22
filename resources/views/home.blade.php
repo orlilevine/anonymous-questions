@@ -52,7 +52,7 @@
     }
 
     .description {
-        font-size: 1.1rem; /* Slightly smaller font size for better readability */
+        font-size: .9rem; /* Slightly smaller font size for better readability */
         color: #555;
         line-height: 1.5; /* Increased line height for better readability */
         max-width: 750px;

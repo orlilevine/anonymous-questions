@@ -92,7 +92,8 @@
     .form-control {
         width: 100%; /* Take up the full width of the form group */
         padding: 15px;
-        font-size: 1rem;
+        font-size: 1rem; /* Ensure consistent font size */
+        font-family: inherit; /* Ensure consistent font family */
         color: #333;
         border: 1px solid #ddd;
         border-radius: 5px;
@@ -105,6 +106,7 @@
         box-shadow: 0 0 5px rgba(0, 150, 199, 0.5);
         outline: none;
     }
+
 
     .btn-submit {
         display: inline-block;
